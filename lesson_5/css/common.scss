@@ -1,0 +1,22 @@
+.title {
+	color: #772eff;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	text-align: center;
+	font-size: 32px;
+	font-weight: 500;
+	text-decoration: underline;
+}
+
+.row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.logo {
+	width: 64px;
+	height: 64px;
+	background-color: #772eff;
+	border-radius: 50%;
+}

@@ -1,0 +1,46 @@
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 15px 0;
+	background-color: #fff;
+	z-index: 50;
+	box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.05);
+	&__container {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	&__logo {
+		color: #fff;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__menu {
+	}
+}
+.menu {
+
+	&__body {
+	}
+
+	&__list {
+		display: flex;
+		gap: 40px;
+	}
+
+	&__item {
+	}
+
+	&__link {
+		transition: all 0.3s ease 0s;
+		&:hover{
+			color: #772eff;
+			text-shadow: 0px 0px 15px rgba(119, 46, 255, 0.671);
+		}
+	}
+}

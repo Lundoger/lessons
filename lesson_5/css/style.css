@@ -1,0 +1,445 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+@font-face {
+  font-family: "Taviraj";
+  src: url("../fonts/Taviraj-BoldItalic.woff2") format("woff2"), url("../fonts/Taviraj-BoldItalic.woff") format("woff");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Taviraj";
+  src: url("../fonts/Taviraj-Italic.woff2") format("woff2"), url("../fonts/Taviraj-Italic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Taviraj";
+  src: url("../fonts/Taviraj-Bold.woff2") format("woff2"), url("../fonts/Taviraj-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Taviraj";
+  src: url("../fonts/Taviraj-MediumItalic.woff2") format("woff2"), url("../fonts/Taviraj-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Taviraj";
+  src: url("../fonts/Taviraj-Medium.woff2") format("woff2"), url("../fonts/Taviraj-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Taviraj";
+  src: url("../fonts/Taviraj-Regular.woff2") format("woff2"), url("../fonts/Taviraj-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato-BoldItalic.woff2") format("woff2"), url("../fonts/Lato-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato-Italic.woff2") format("woff2"), url("../fonts/Lato-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato-Bold.woff2") format("woff2"), url("../fonts/Lato-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato-Medium.woff2") format("woff2"), url("../fonts/Lato-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato-Regular.woff2") format("woff2"), url("../fonts/Lato-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato-MediumItalic.woff2") format("woff2"), url("../fonts/Lato-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  min-width: 320px;
+}
+
+body {
+  color: #6F7278;
+  line-height: 1;
+  font-family: "Poppins";
+  font-size: 20px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+input,
+button,
+textarea {
+  font-family: "Poppins";
+  font-size: inherit;
+}
+
+button {
+  cursor: pointer;
+  color: inherit;
+  background-color: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+[class*=__container] {
+  max-width: 1300px;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 15px;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+}
+.wrapper > main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.title {
+  color: #772eff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.logo {
+  width: 64px;
+  height: 64px;
+  background-color: #772eff;
+  border-radius: 50%;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 0;
+  background-color: #fff;
+  z-index: 50;
+  -webkit-box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.05);
+}
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header__logo {
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+}
+.menu__link {
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.menu__link:hover {
+  color: #772eff;
+  text-shadow: 0px 0px 15px rgba(119, 46, 255, 0.671);
+}
+
+.footer {
+  padding: 15px 0;
+}
+.footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+.footer__container::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #6F7278;
+  top: -50px;
+  left: 0;
+}
+.footer__logo {
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section {
+  padding: 50px 0;
+}
+
+.page {
+  margin: 100px 0 50px 0;
+}
+.align-decor__title {
+  margin-bottom: 40px;
+}
+.align-decor__row {
+  margin: 0 -15px;
+}
+.align-decor__column {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 33.333%;
+          flex: 0 1 33.333%;
+  padding: 0 15px;
+}
+.align-decor__item {
+  padding: 15px;
+}
+.align-decor__text {
+  line-height: 1.5;
+}
+.align-decor__text span {
+  font-weight: 700;
+  color: #772eff;
+}
+.align-decor__text--first {
+  text-align: right;
+  line-height: 2;
+  text-decoration: overline;
+}
+.align-decor__text--second {
+  text-align: center;
+  text-decoration: underline;
+}
+.align-decor__text--third {
+  text-align: justify;
+  text-decoration: line-through;
+}
+
+.transform-shadow {
+  font-family: "Lato";
+}
+.transform-shadow__title {
+  margin-bottom: 40px;
+}
+.transform-shadow__row {
+  margin: 0 -15px;
+}
+.transform-shadow__column {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 33.333%;
+          flex: 0 1 33.333%;
+  padding: 0 15px;
+}
+.transform-shadow__item {
+  padding: 15px;
+}
+.transform-shadow__text {
+  line-height: 1.5;
+}
+.transform-shadow__text span {
+  color: #772eff;
+  font-weight: 500;
+}
+.transform-shadow__text--first {
+  text-transform: uppercase;
+  text-shadow: -1px 1px 7px #000;
+  font-weight: 700;
+}
+.transform-shadow__text--first span {
+  font-style: italic;
+}
+.transform-shadow__text--second {
+  text-transform: lowercase;
+  text-shadow: 2px -5px 3px #b9b4b4;
+}
+.transform-shadow__text--second span {
+  font-weight: 400;
+  font-style: italic;
+}
+.transform-shadow__text--third {
+  text-transform: capitalize;
+  text-shadow: 0px 3px 3px #acb1f8;
+  font-style: italic;
+  font-weight: 500;
+}
+.transform-shadow__text--third span {
+  font-weight: 700;
+  font-style: normal;
+}
+
+.other-styles {
+  font-family: "Taviraj";
+}
+.other-styles__title {
+  margin-bottom: 40px;
+}
+.other-styles__row {
+  margin: 0 -15px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.other-styles__column {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  padding: 0 15px;
+}
+.other-styles__item {
+  padding: 15px;
+}
+.other-styles__text {
+  line-height: 1.5;
+}
+.other-styles__text span {
+  font-weight: 700;
+  color: #772eff;
+}
+.other-styles__text--first {
+  letter-spacing: 3px;
+  word-spacing: 30px;
+}
+.other-styles__text--first span {
+  font-style: italic;
+}
+.other-styles__text--second {
+  letter-spacing: 1.5px;
+  word-spacing: 10px;
+  font-weight: 500;
+  font-style: italic;
+}
+.other-styles__text--second span {
+  font-style: normal;
+}
+.other-styles__text--third {
+  letter-spacing: 0.5px;
+  word-spacing: -10px;
+  white-space: nowrap;
+  font-weight: 700;
+}
