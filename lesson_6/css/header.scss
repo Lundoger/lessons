@@ -1,0 +1,100 @@
+@use "sass:math";
+
+.header {
+	margin-bottom: 25px;
+	padding: 15px 0;	
+	&__container {
+	}
+
+	&__pretitle {
+		display: flex;
+		margin-bottom: 12px;
+		gap: 12px;
+	}
+
+	&__pretitle-text {
+		line-height: math.div( 26, 16);
+		& span {
+			color: #FF3F3A;
+		}
+	}
+
+	&__pretitle-text--icon {
+		& i {
+			margin-right: 8px;
+		}
+		display: flex;
+		align-items: center;
+	}
+
+	&__pretitle-text--gray {
+		color: #787A80;
+	}
+
+	&__title {
+		font-weight: 900;
+		font-size: 46px;
+		color: #1E212C;
+		line-height: math.div(60, 46);
+		margin-bottom: 26px;
+	}
+
+	&__tools {
+	}
+
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__date {
+	}
+
+	&__date-row {
+		display: flex;
+	}
+
+	&__date-text {
+		color: #787A80;
+		line-height: math.div(26, 16);
+		display: flex;
+		align-items: center;
+		&:first-child{
+			margin-right: 24px;
+		}
+	}
+
+	&__date-icon {
+		margin-right: 9px;
+	}
+
+	&__social {
+	}
+
+	&__social-row {
+		display: flex;
+	}
+
+	&__social-text {
+		font-weight: 700;
+		color: #1E212C;
+		line-height: math.div(26, 16);
+		margin-right: 12px;
+	}
+
+	&__social-links {
+		display: flex;
+		align-items: center;
+		gap: 12px;
+	}
+
+	&__social-link {
+		color: #787A80;
+		transition: all 0.3s ease 0s;
+		font-size: 20px;
+		&:hover{
+			color: #1E212C;
+		}
+	}
+}
