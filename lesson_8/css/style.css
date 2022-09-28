@@ -612,11 +612,8 @@ h6 {
 .curator__link i {
   font-size: 22px;
 }
-
-.page {
-  margin-top: 120px;
-}
 .page__hover {
+  margin-top: 120px;
   margin-bottom: 200px;
 }
 
