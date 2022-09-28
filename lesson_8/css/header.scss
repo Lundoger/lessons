@@ -1,0 +1,88 @@
+@use "sass:math";
+
+.header {
+	padding: 20px 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 50;
+	&__container {
+		display: flex;
+		align-items: center;
+	}
+
+	&__logo {
+		margin-right: 60px;
+	}
+
+	&__menu {
+		flex: 1 1 auto;
+	}
+
+	&__links {
+		display: flex;
+		align-items: center;
+		& a:not(:last-child) {
+			margin-right: 36px;
+		}
+	}
+
+	&__button {
+		line-height: math.div(26, 16);
+		font-weight: 700;
+		padding: 11px 40px;
+		max-width: 300px;
+	}
+
+	&__link {
+		line-height: math.div(26, 16);
+		font-weight: 700;
+		display: flex;
+		align-items: center;
+		transition: all 0.3s ease 0s;
+		&:hover{
+			color: #FF3F3A;
+		}
+		& > *:not(:last-child) {
+			margin-right: 10px;
+		}
+	}
+}
+.menu {
+
+	&__body {
+	}
+
+	&__list {
+		display: flex;
+		column-gap: 40px;
+	}
+
+	&__item {
+	}
+
+	&__link {
+		font-weight: 700;
+		line-height: math.div(26, 16);
+		transition: all 0.3s ease 0s;
+		&:hover {
+			color: #FF3F3A;
+		}
+	}
+
+	&__link--active {
+		color: #FF3F3A;
+		position: relative;
+		&::before{
+			content:'';
+			display: block;
+			position: absolute;
+			width: 60px;
+			height: 1px;
+			background-color: #FF3F3A;
+			top: 21px;
+			left: -2px;
+		}
+	}
+}
