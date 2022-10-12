@@ -1,0 +1,280 @@
+@use "sass:math";
+
+.footer-title {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: math.div(24, 16);
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+.footer-list {
+}
+
+.footer-item {
+	&:not(:last-child) {
+		margin-bottom: 8px;
+	}
+}
+.footer-link {
+	display: inline-block;
+	line-height: math.div(26, 16);
+	opacity: 0.6;
+	position: relative;
+	transition: all 0.3s ease 0s;
+	&::before {
+		content: "";
+		display: block;
+		height: 2px;
+		width: 100%;
+		background-color: #fff;
+		position: absolute;
+		bottom: -3px;
+		left: 0;
+		transition: all 0.3s ease 0s;
+		transform: scaleX(0);
+	}
+	&:hover::before {
+		transform: scaleX(1);
+	}
+	&:hover {
+		opacity: 1;
+	}
+}
+
+.footer {
+	background-color: rgba(30, 33, 44, 1);
+	color: #fff;
+	&__top {
+		padding: 60px 0 80px 0;
+	}
+
+	&__container {
+		display: flex;
+		column-gap: 79px;
+	}
+
+	&__social {
+		max-width: 277px;
+		& > *:not(:last-child) {
+			margin-bottom: 24px;
+		}
+	}
+
+	&__sitemap {
+		& > *:not(:last-child) {
+			margin-bottom: 12px;
+		}
+	}
+
+	&__courses {
+		& > *:not(:last-child) {
+			margin-bottom: 12px;
+		}
+	}
+
+	&__contact {
+		& > *:not(:last-child) {
+			margin-bottom: 12px;
+		}
+	}
+
+	&__sign {
+		max-width: 286px;
+		& > *:not(:last-child) {
+			margin-bottom: 12px;
+		}
+	}
+
+	&__bottom {
+		padding: 19px 0;
+		background-color: rgba(255, 255, 255, 0.05);
+	}
+
+	&__bottom-container {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__copyright {
+		display: flex;
+		align-items: center;
+		font-size: 12px;
+		opacity: 0.6;
+		& > *:not(:last-child) {
+			margin-right: 2px;
+		}
+	}
+
+	&__txt-copyright {
+	}
+
+	&__txt2-copyright {
+		display: flex;
+		align-items: center;
+		column-gap: 4px;
+		i {
+			font-size: 16px;
+			color: #ff3f3a;
+		}
+	}
+
+	&__bottom-up {
+		text-transform: uppercase;
+		font-weight: 700;
+		font-size: 14px;
+		line-height: math.div(21, 14);
+		opacity: 0.6;
+		transition: all 0.3s ease 0s;
+		&:hover {
+			opacity: 1;
+		}
+	}
+}
+.social-footer {
+	&__logo {
+		max-width: 130px;
+		img {
+			width: 100%;
+		}
+		&:last-child {
+			margin-top: 38px;
+		}
+	}
+
+	&__text {
+		font-size: 12px;
+		line-height: math.div(18, 12);
+		opacity: 0.6;
+		&:last-child {
+			margin-top: 38px;
+		}
+	}
+
+	&__icons {
+		&:last-child {
+			margin-top: 38px;
+		}
+	}
+
+	&__row {
+		display: flex;
+		align-items: center;
+		column-gap: 20px;
+	}
+
+	&__icon {
+		opacity: 0.6;
+		transition: all 0.3s ease 0s;
+		i {
+			font-size: 24px;
+		}
+		&:hover {
+			opacity: 1;
+		}
+	}
+}
+.sitemap-footer {
+	&__title {
+	}
+
+	&__list {
+	}
+
+	&__item {
+	}
+
+	&__link {
+	}
+
+	&__link--active {
+		opacity: 1;
+		position: relative;
+		&::after {
+			content: "";
+			display: block;
+			height: 2px;
+			width: 100%;
+			background-color: #fff;
+			position: absolute;
+			bottom: -3px;
+			left: 0;
+		}
+	}
+}
+.courses-footer {
+	&__title {
+	}
+
+	&__list {
+	}
+
+	&__item {
+	}
+
+	&__link {
+	}
+}
+.contact-footer {
+	&__title {
+	}
+
+	&__list {
+	}
+
+	&__item {
+	}
+
+	&__link {
+		display: inline-flex;
+		align-items: center;
+		& i {
+			font-size: 16px;
+			margin-right: 8px;
+		}
+	}
+}
+.sign-footer {
+	&__title {
+		&:first-child {
+			margin-bottom: 24px;
+		}
+	}
+
+	&__form {
+		position: relative;
+		&:first-child {
+			margin-bottom: 24px;
+		}
+	}
+
+	&__input {
+		color: #ffffff;
+		opacity: 0.6;
+		outline: none;
+		width: 100%;
+		background: rgba(255, 255, 255, 0.12);
+		border: 1px solid rgba(255, 255, 255, 0.2);
+		border-radius: 4px;
+		padding: 9px 40px 9px 12px;
+	}
+
+	&__button {
+		padding: 15px 13px 16px 13px;
+		position: absolute;
+		top: 0;
+		right: 0;
+		i {
+			font-size: 8px;
+		}
+	}
+
+	&__description {
+		font-size: 10px;
+		line-height: math.div(15, 10);
+		opacity: 0.6;
+		&:first-child {
+			margin-bottom: 24px;
+		}
+	}
+}

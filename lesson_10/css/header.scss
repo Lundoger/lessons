@@ -1,0 +1,102 @@
+@use "sass:math";
+
+.header {
+	padding: 20px 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 50;
+	&__container {
+		display: flex;
+		align-items: center;
+	}
+
+	&__logo {
+		margin-right: 60px;
+	}
+
+	&__menu {
+		flex: 1 1 auto;
+	}
+
+	&__links {
+		display: flex;
+		align-items: center;
+		& a:not(:last-child) {
+			margin-right: 36px;
+		}
+	}
+
+	&__button {
+		padding: 11px 40px;
+		max-width: 300px;
+	}
+
+	&__link {
+		line-height: math.div(26, 16);
+		font-weight: 700;
+		display: flex;
+		align-items: center;
+		transition: all 0.3s ease 0s;
+		&:hover{
+			color: #FF3F3A;
+		}
+		& > *:not(:last-child) {
+			margin-right: 10px;
+		}
+	}
+}
+.menu {
+
+	&__body {
+	}
+
+	&__list {
+		display: flex;
+		column-gap: 40px;
+	}
+
+	&__item {
+	}
+
+	&__link {
+		font-weight: 700;
+		line-height: math.div(26, 16);
+		transition: all 0.3s ease 0s;
+		position: relative;
+		&:hover {
+			color: #FF3F3A;
+		}
+		&::before{
+			content:'';
+			display: block;
+			position: absolute;
+			width: 100%;
+			height: 2px;
+			background-color: #FF3F3A;
+			bottom: -3px;
+			right: 0;
+			transition: all 0.3s ease 0s;
+			transform: scaleX(0);
+		}
+		&:hover::before{
+			transform: scaleX(1);
+		}
+	}
+
+	&__link--active {
+		color: #FF3F3A;
+		position: relative;
+		&::after{
+			content:'';
+			display: block;
+			position: absolute;
+			width: 100%;
+			height: 2px;
+			background-color: #FF3F3A;
+			bottom: -3px;
+			right: 0;
+		}
+	}
+}
