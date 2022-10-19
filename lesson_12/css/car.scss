@@ -1,0 +1,450 @@
+.car__container {
+	max-width: 1500px;
+}
+
+.car {
+	&__container {
+		height: 100vh;
+	}
+
+	&__body {
+		position: relative;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+		height: 250px;
+	}
+
+	&__top {
+		position: absolute;
+		z-index: 20;
+		top: -52px;
+		left: 92px;
+	}
+
+	&__top-s {
+		position: absolute;
+		z-index: 21;
+		top: -110px;
+		left: 330px;
+	}
+
+	&__top-t {
+		position: absolute;
+		z-index: 21;
+		top: -108.5px;
+		left: 525px;
+	}
+
+	&__top-f {
+		position: absolute;
+		z-index: 21;
+		top: -70px;
+		left: 440px;
+	}
+
+	&__main {
+		position: absolute;
+		z-index: 1;
+	}
+
+	&__back {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 2;
+	}
+
+	&__front {
+		position: absolute;
+		top: 0;
+		right: 10px;
+		z-index: 2;
+	}
+
+	&__air-intakes {
+		position: absolute;
+		bottom: 10px;
+		right: 20px;
+		z-index: 50;
+		transform: rotateY(50deg);
+	}
+
+	&__front-s {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		z-index: 4;
+	}
+
+	&__front-t {
+		position: absolute;
+		top: 0;
+		right: 188px;
+		z-index: 4;
+	}
+
+
+
+	&__window {
+		position: absolute;
+		top: -90px;
+		left: 580px;
+		z-index: 32;
+	}
+
+	&__window-second {
+		position: absolute;
+		top: -85px;
+		left: 390px;
+		z-index: 32;
+	}
+
+	&__side-mirror {
+	}
+
+	&__headlight {
+		position: absolute;
+		top: 15px;
+		right: 130px;
+		z-index: 5;
+	}
+
+	&__front-wheel {
+	}
+
+	&__fuel-cap {
+		position: absolute;
+		top: -7px;
+		left: 1040px;
+		z-index: 50;
+		transform: rotateX(60deg);
+	}
+
+	&__door {
+		position: absolute;
+		top: 0;
+		left: 550px;
+		z-index: 29;
+	}
+
+	&__intakes-air {
+		position: absolute;
+		top: 50px;
+		left: 430px;
+		z-index: 50;
+	}
+
+	&__back-wheel {
+	}
+
+	&__rear-headlight {
+		position: absolute;
+		top: 50px;
+		left: 12px;
+		z-index: 50;
+	}
+
+	&__back-lattice {
+	}
+}
+
+.main {
+	border-radius: 400px;
+	background: #c73a1f;
+	width: 600px;
+	height: 250px;
+	&__substrate {
+		background: #c73a1f;
+		width: 900px;
+		height: 100px;
+		position: absolute;
+		bottom: 0;
+		left: -150px;
+	}
+}
+
+.top {
+	border-radius: 527px 0px 0px 0px / 200px 3px 0px 0px;
+	background: #c73a1f;
+	width: 400px;
+	height: 100px;
+	transform: skewX(-60deg);
+}
+
+.top-s {
+	border-radius: 300px 0px 0px 0px / 100px 3px 0px 0px;
+	background: #c73a1f;
+	width: 300px;
+	height: 70px;
+	transform: skewX(-47deg);
+}
+
+.top-t {
+	border-radius: 169px 80px 77px 0px / 150px 71px 53px 0px;
+	background: #c73a1f;
+	width: 400px;
+	height: 150px;
+	transform: skewX(60deg);
+}
+
+.top-f {
+	background: #c73a1f;
+	width: 150px;
+	height: 70px;
+}
+
+.back {
+	border-radius: 170px 0px 1px 155px / 68px 52px 2px 61px;
+	background: #c73a1f;
+	height: 250px;
+	width: 600px;
+}
+
+.front {
+	border-radius: 0% 100% 20% 80% / 100% 77% 23% 0%;
+	background: #c73a1f;
+	height: 250px;
+	width: 600px;
+}
+
+.air-intakes {
+	width: 70px;
+	height: 90px;
+	background: #000;
+	border-radius: 30px 36px 42px 65px / 31px 32px 296px 51px;
+}
+
+.front-s {
+	border-radius: 0% 100% 15% 85% / 100% 21% 79% 0%;
+	background: #c73a1f;
+	height: 120px;
+	width: 400px;
+}
+
+.front-t {
+	border-radius: 0% 100% 0% 100% / 100% 32% 68% 0%;
+	background: #c73a1f;
+	height: 100px;
+	width: 400px;
+}
+
+.window {
+	width: 310px;
+	&__item {
+		border-radius: 99px 211px 0px 0px / 86px 179px 0px 0px;
+		background: rgb(108, 149, 238);
+		height: 80px;
+		width: 150px;
+		transform: skewX(50deg);
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+
+	&__addition {
+		border-radius: 39px 68px 82px 10px / 39px 60px 37px 13px;
+		height: 80px;
+		width: 250px;
+		background: rgb(108, 149, 238);
+		transform: skewX(20deg);
+		top: 0;
+		left: 0;
+	}
+}
+
+.window-second {
+	border-radius: 398px 2px 4px 400px / 145px 3px 2px 150px;
+	background: rgb(108, 149, 238);
+	height: 75px;
+	width: 170px;
+	transform: skewX(30deg);
+}
+
+.side-mirror {
+	position: absolute;
+	top: -47px;
+	right: 580px;
+	z-index: 50;
+	&__main {
+		border-radius: 114px 242px 365px 92px / 150px 149px 38px 61px;
+		background: #0a0a0a;
+		width: 80px;
+		height: 45px;
+	}
+	&__stem {
+		border-radius: 114px 150px 150px 102px / 150px 200px 99px 90px;
+		height: 45px;
+		width: 40px;
+		background: #0a0a0a;
+		position: absolute;
+		bottom: -25px;
+		right: -5px;
+	}
+}
+
+.headlight {
+	border-radius: 0% 100% 0% 100% / 0% 100% 0% 100%;
+	box-shadow: -13px 15px 87px 13px rgba(87,87,87,1);
+	width: 80px;
+	height: 100px;
+	background: #9a9b9d;
+	transform: skewX(30deg);
+}
+
+.front-wheel {
+	background: rgba(255, 255, 255) url("../img/brakes.png") 45% 45% / 175px 175px no-repeat;
+	width: 250px;
+	height: 250px;
+	position: absolute;
+	bottom: -70px;
+	right: 200px;
+	z-index: 10;
+	border-radius: 250px 250px 0px 35px / 199px 200px 0px 0px;
+	&::before {
+		content: "";
+		background: rgba(255, 255, 255, 0) url("../img/wheel.png") 0 0 / cover
+			no-repeat;
+		width: 250px;
+		height: 250px;
+		position: absolute;
+		z-index: 1;
+		border-radius: 50%;
+	}
+}
+.fuel-cap {
+	width: 80px;
+	height: 80px;
+	border: 1px solid #000;
+	border-radius: 50%;
+}
+.door {
+	border-radius: 44px 96px 0px 196px / 101px 142px 0px 128px;
+	width: 470px;
+	height: 220px;
+	border: 2px solid #000;
+	&__handle1 {
+		width: 70px;
+		height: 20px;
+		border: 2px solid #000;
+		background: #c73a1f;
+		border-radius: 50px 30px 80px 30px;
+		position: absolute;
+		top: 50px;
+		left: 50px;
+		z-index: 30;
+	}
+
+	&__handle2 {
+		width: 50px;
+		height: 20px;
+		border: 2px solid #000;
+		border-radius: 0px 30px 80px 30px;
+		position: absolute;
+		top: 57px;
+		left: 55px;
+		z-index: 29;
+	}
+}
+.intakes-air {
+	width: 90px;
+	height: 120px;
+	background: #000;
+	border-radius: 0px 43px 33px 102px / 0px 39px 32px 145px;
+	transform: skewX(20deg);
+}
+
+.spoiler {
+	position: absolute;
+	top: -70px;
+	left: 20px;
+	z-index: 50;
+	&__item1 {
+		width: 80px;
+		height: 100px;
+		border: 15px solid #000;
+		border-radius: 34px 70px 16px 22px / 49px 135px 19px 19px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 50;
+		transform: skewX(10deg);
+	}
+	&__item2 {
+		width: 140px;
+		height: 40px;
+		background: #000;
+		border-radius: 8px 107px 92px 95px / 9px 75px 75px 75px;
+		position: absolute;
+		top: -20px;
+		left: -40px;
+		z-index: 51;
+		transform: skewX(30deg) rotate(10deg);
+	}
+}
+
+.back-wheel {
+	background: #fff url("../img/brakes.png") 45% 45% / 175px 175px no-repeat;
+	width: 250px;
+	height: 250px;
+	position: absolute;
+	bottom: -70px;
+	left: 200px;
+	z-index: 10;
+	border-radius: 250px 250px 0px 35px / 199px 200px 0px 0px;
+	&::before {
+		content: "";
+		background: rgba(255, 255, 255, 0) url("../img/wheel.png") 0 0 / cover
+			no-repeat;
+		width: 250px;
+		height: 250px;
+		position: absolute;
+		z-index: 1;
+		border-radius: 50%;
+	}
+}
+.rear-headlight {
+	width: 130px;
+	height: 40px;
+	background: #7b1b22;
+	border-radius: 100% 0% 96% 4% / 0% 44% 56% 100%;
+	transform: skewX(-40deg);
+	&__light {
+		width: 130px;
+		height: 10px;
+		border-radius: 3px;
+		background: rgb(243, 137, 137);
+		box-shadow: 0px 0px 19px 5px rgb(238, 36, 77);
+	}
+}
+
+.turn-signals {
+	position: absolute;
+	top: 170px;
+	left: 0;
+	z-index: 70;
+	&__item1 {
+		width: 40px;
+		height: 20px;
+		background: rgb(83, 83, 83);
+		border-radius: 10px 20px 20px 10px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 70;
+	}
+	&__item2 {
+		width: 70px;
+		height: 20px;
+		background: rgb(63, 14, 14);
+		border-radius: 10px 20px 20px 10px;
+		position: absolute;
+		top: 0;
+		right: -115px;
+		z-index: 71;
+	}
+}
