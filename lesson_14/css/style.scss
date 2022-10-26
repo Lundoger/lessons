@@ -1,0 +1,517 @@
+@use "sass:math";
+
+// Подключение шрифтов ===========================================================================================================================================================================================================================================================================
+//&display=swap - добавить при подключении через плагин
+// @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+
+// Подключить если есть локальные файлы шрифтов
+@import "fonts";
+// Подключить если есть файл иконочного шрифта
+@import "icons";
+
+// ============================================================================================================================================================================================================================================================================================================================================================================================
+// Настройки шаблона ============================================================================================================================================================================================================================================================================================================================================================================================
+// ============================================================================================================================================================================================================================================================================================================================================================================================
+
+// Шрифт по умолчанию ==============================================================================================================================================================================================================================================================================
+$fontFamily: "Gilroy";
+$fontSize: 14px; // где 14(px) - размер шрифта по умолчанию из макета
+
+// Основные цвета
+$mainColor: #ffffff; // Цвет шрифта по умолчанию
+$darkColor: #333333;
+
+// Настройки адаптивной сетки ===============================================================================================================================================================================================================================================================================================
+
+// Минимальная ширина страницы
+$minWidth: 320;
+// Ширина полотна (макета)
+$maxWidth: 1920;
+// ============================================================================================================================================================================================================================================================================================================================================================================================
+// ============================================================================================================================================================================================================================================================================================================================================================================================
+
+// Обнуление ============================================================================================================================================================================================== =============================================================================================== ===============================================================================================
+@import "null";
+
+// Стили тега BODY ============================================================================================================================================================================================================================================================================================================================================================================================
+
+body {
+}
+
+[class*="__container"] {
+	max-width: 1140px;
+	padding: 0 15px;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+// Оболочка wrapper ============================================================================================================================================================================================================================================================================================================================================================================================================================================
+.wrapper {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	// Прижимаем footer
+	> main {
+		flex: 1 1 auto;
+	}
+}
+
+// Подключение стилей общих элементов проекта
+@import "common";
+
+// Подключение стилей отдельных блоков
+@import "header";
+@import "footer";
+
+// Подключение стилей отдельных страниц
+// ============================================================================================================================================================================================================================================================================================================================================================================================\
+.page {
+	&__fullscreen {
+	}
+}
+.fullscreen {
+	background: url("../img/main-screen.jpg") 0 0 / cover no-repeat;
+	&__container {
+		min-height: 100vh;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-end;
+	}
+
+	&__title {
+		font-family: "Noto Serif";
+		font-style: normal;
+		font-weight: 700;
+		font-size: 36px;
+		line-height: math.div(49, 36);
+		max-width: 700px;
+		&:not(:last-child) {
+			margin-bottom: 50px;
+		}
+	}
+
+	&__button {
+		background: #333333;
+		border: 1px solid #ffffff;
+		max-width: 300px;
+		&:not(:last-child) {
+			margin-bottom: 80px;
+		}
+	}
+
+	&__sponsors {
+		display: flex;
+		flex-wrap: wrap;
+		column-gap: 30px;
+		row-gap: 20px;
+		padding: 30px 0;
+	}
+	&__item-sponsors {
+		position: relative;
+		img {
+			max-width: 100%;
+		}
+		&:not(:last-child) {
+			&::before {
+				content: "";
+				width: 1px;
+				height: 60px;
+				background-color: #fff;
+				position: absolute;
+				top: 0;
+				left: calc(100% + 15px);
+			}
+		}
+	}
+}
+//===================================================================================
+.page {
+	&__range {
+		padding: 100px 0 120px 0;
+	}
+}
+.range {
+	&__container {
+	}
+
+	&__heading {
+		&:not(:last-child) {
+			margin-bottom: 60px;
+		}
+	}
+
+	&__pretitle {
+		color: $darkColor;
+	}
+
+	&__title {
+		color: $darkColor;
+	}
+
+	&__body {
+	}
+
+	&__buttons {
+		&:not(:last-child) {
+			margin-bottom: 55px;
+		}
+		display: flex;
+		flex-wrap: wrap;
+		align-items: flex-start;
+		gap: 18px;
+	}
+
+	&__item-buttons {
+		color: $darkColor;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: math.div(21, 18);
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		position: relative;
+		width: 171px;
+		height: 61px;
+		outline: none;
+		transition: all 0.3s ease 0s;
+		& span {
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			width: 165px;
+			height: 55px;
+			background: #f9f9f9;
+			border: 1px solid #d6d6d6;
+			position: absolute;
+			top: 0;
+			left: 0;
+			transition: all 0.3s ease 0s;
+		}
+		&::before {
+			content: "";
+			background: #f9f9f9;
+			border: 1px solid #d6d6d6;
+			width: 165px;
+			height: 55px;
+			position: absolute;
+			bottom: 0;
+			right: -6px;
+			transition: all 0.3s ease 0s;
+		}
+		&:focus span {
+			width: 100%;
+			height: 100%;
+			background-color: $darkColor;
+			color: #fff;
+		}
+		&:focus::before {
+			right: 0;
+		}
+	}
+
+	&__item-buttons--active {
+		width: 165px;
+		span {
+			width: 100%;
+			height: 100%;
+			background-color: $darkColor;
+			color: #fff;
+		}
+		&::before {
+			content: "";
+			right: 0;
+		}
+	}
+
+	&__gallery {
+	}
+}
+.gallery {
+	&__row {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		gap: 30px;
+	}
+
+	&__link {
+		overflow: hidden;
+		position: relative;
+		&:hover img {
+			transform: scale(1.1);
+		}
+		img {
+			max-width: 100%;
+			transition: all 0.3s ease 0s;
+		}
+		span {
+			font-weight: 500;
+			font-size: 24px;
+			line-height: math.div(28, 24);
+			letter-spacing: 0.1em;
+			text-transform: uppercase;
+			position: absolute;
+			bottom: 11%;
+			left: 50%;
+			transform: translate(-50%, 0);
+		}
+	}
+}
+//===================================================================================================
+.page {
+	&__our-salon {
+		padding: 100px 0;
+	}
+}
+.our-salon {
+	background: url("../img/bg_our-salon.jpg") 0 0 repeat;
+	&__container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	&__heading {
+		&:not(:last-child) {
+			margin-bottom: 45px;
+		}
+	}
+
+	&__pretitle {
+	}
+
+	&__title {
+	}
+
+	&__description {
+		max-width: 730px;
+		text-align: center;
+		margin: 0 auto;
+		font-size: 18px;
+		line-height: math.div(25, 18);
+		&:not(:last-child) {
+			margin-bottom: 60px;
+		}
+	}
+
+	&__button {
+		background: #ffffff;
+		border: 1px solid #333333;
+		color: $darkColor;
+		max-width: 300px;
+	}
+}
+//================================================================================
+.page {
+	&__blog {
+		padding: 120px 0;
+	}
+}
+.blog {
+	&__container {
+		& > *:not(:last-child) {
+			margin-bottom: 60px;
+		}
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	&__heading {
+		color: $darkColor;
+	}
+
+	&__pretitle {
+	}
+
+	&__title {
+	}
+
+	&__body {
+	}
+
+	&__row {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -15px;
+		row-gap: 20px;
+	}
+
+	&__column {
+		flex: 0 1 33.333%;
+		padding: 0 15px;
+	}
+
+	&__item {
+	}
+
+	&__button {
+		background: $darkColor;
+		border: 1px solid #ffffff;
+		max-width: 300px;
+	}
+}
+.item {
+	position: relative;
+	&:hover img {
+		transform: scale(1.1);
+	}
+	&__link {
+		display: inline-block;
+		overflow: hidden;
+		img {
+			max-width: 100%;
+			transition: all 0.3s ease 0s;
+		}
+		span {
+			font-size: 21px;
+			line-height: math.div(29, 21);
+			text-align: center;
+			position: absolute;
+			bottom: 9%;
+			left: 50%;
+			transform: translate(-50%, 0);
+		}
+	}
+}
+//========================================================================
+.page {
+	&__social {
+		padding-bottom: 150px;
+	}
+}
+.social {
+	&__container {
+		& > *:not(:last-child) {
+			margin-bottom: 60px;
+		}
+	}
+
+	&__heading {
+		color: $darkColor;
+	}
+
+	&__pretitle {
+	}
+
+	&__title {
+	}
+
+	&__gallery {
+	}
+}
+.gallery-social {
+	&__cont {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: repeat(2, 300px);
+	}
+
+	&__video {
+		grid-column: span 2;
+	}
+
+	&__publication {
+		width: 100%;
+		height: 100%;
+		img {
+			max-width: 100%;
+		}
+	}
+}
+//==============================================================================================================================
+.page {
+	&__subscribe {
+		padding: 100px 0 120px 0;
+	}
+}
+.subscribe {
+	background: url("../img/bg_our-salon.jpg") 0 0 repeat;
+	&__container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		& > *:not(:last-child) {
+			margin-bottom: 60px;
+		}
+	}
+
+	&__heading {
+	}
+
+	&__pretitle {
+	}
+
+	&__title {
+	}
+
+	&__body {
+	}
+
+	&__row {
+		display: flex;
+		gap: 95px;
+	}
+
+	&__info {
+		flex: 1 1 auto;
+	}
+
+	&__list-info {
+		& > *:not(:last-child) {
+			margin-bottom: 15px;
+		}
+	}
+
+	&__item-info {
+		font-size: 18px;
+		line-height: math.div(25, 18);
+		position: relative;
+		padding-left: 37px;
+		&::before {
+			content: "";
+			width: 17px;
+			height: 17px;
+			background: url("../img/icons/play-btn.svg") 0 0 no-repeat;
+			position: absolute;
+			top: 4px;
+			left: 0;
+		}
+	}
+	&__e-mail {
+		flex: 0 0 448px;
+		border: 1px solid #ffffff;
+		padding: 14px 15px;
+	}
+	&__form {
+		background-color: #fff;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 15px;
+		padding: 20px 22px;
+	}
+
+	&__input {
+		padding: 15px 20px 14px 20px;
+		background: #ffffff;
+		border: 1px solid #d6d6d6;
+		outline: none;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: math.div(16, 14);
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		color: $darkColor;
+	}
+
+	&__button {
+		background: #333333;
+		border: 1px solid #FFFFFF;
+		padding: 14px 35px;		
+		&:hover{
+			transform: scale(1);
+		}
+	}
+}
+//=========================================================================
