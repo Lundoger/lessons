@@ -1,0 +1,45 @@
+@use "sass:math";
+
+.title {
+	line-height: math.div(24, 20);
+	text-transform: uppercase;
+}
+
+.pretitle {
+	font-family: "Libre Franklin";
+	font-size: 10px;
+	line-height: math.div(12, 10);
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #999999;
+}
+
+.author {
+	font-family: "Libre Franklin";
+	font-weight: 700;
+	font-size: 10px;
+	line-height: math.div(12, 10);
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	display: inline-flex;
+	align-items: center;
+	gap: 5px;
+	position: relative;
+	&::before{
+		content:'';
+		width: 0%;
+		height: 1px;
+		background-color: #141414;
+		border-radius: 3px;
+		position: absolute;
+		bottom: -2px;
+		right: 0;
+		transition: all 0.3s ease 0s;
+	}
+	@media (any-hover: hover){
+		&:hover::before{
+			width: 100%;
+			left: 0;
+		}
+	}
+}
