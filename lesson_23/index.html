@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/style.css">
+	<title>lesson 23</title>
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header"></header>
+		<main class="page">
+			<div class="page__first-lesson first-lesson">
+				<section class="first">
+					<div class="first__container">
+						<article class="first__item item">
+							<div class="item__image">
+								<img src="./img/01.png" alt="image">
+							</div>
+							<div class="item__info">
+								<h3 class="item__title">Вариант 1</h3>
+								<p class="item__text">
+									<span class="item__false">Не верно</span> оператор "+" не переводит тип данных
+									поэтому строка "35" останется строкой и в консоль попадет строка "35 - 22" 
+								</p>
+							</div>
+						</article>
+					</div>
+				</section>
+				<section class="second">
+					<div class="second__container">
+						<article class="second__item item">
+							<div class="item__image">
+								<img src="./img/02.png" alt="image">
+							</div>
+							<div class="item__info">
+								<h3 class="item__title">Вариант 3</h3>
+								<p class="item__text">
+									<span class="item__false">Не верно</span> в консоли получим ошибку тк 
+									инкремент можно использовать только с переменными 
+								</p>
+							</div>
+						</article>
+					</div>
+				</section>
+				<section class="third">
+					<div class="third__container">
+						<article class="third__item item">
+							<div class="item__image">
+								<img src="./img/03.png" alt="image">
+							</div>
+							<div class="item__info">
+								<h3 class="item__title">Вариант 4</h3>
+								<p class="item__text">
+									<span class="item__false">Не верно</span> вернет 0 изза постпрефиксной записи инкремента 
+								</p>
+							</div>
+						</article>
+					</div>
+				</section>
+				<section class="fourth">
+					<div class="fourth__container">
+						<article class="fourth__item item">
+							<div class="item__image">
+								<img src="./img/04.png" alt="image">
+							</div>
+							<div class="item__info">
+								<h3 class="item__title">Вариант 5</h3>
+								<p class="item__text">
+									<span class="item__false">Не верно</span> вернет 11 тк оператор || останавливет свою работу при первом
+									найденом true, а в выржении "!false && 11" мы получим 11(true) тк опертор && останавливется при первом
+									найденом false,а если все операнды true то возвращает значение последнего операнда
+								</p>
+							</div>
+						</article>
+					</div>
+				</section>
+			</div>
+			<div class="page__second-lesson second-lesson">
+				<section class="first">
+					<div class="firts__container">
+						<article class="first__item item">
+							<div class="item__image">
+								<img src="./img/01-2.png" alt="image">
+							</div>
+							<div class="item__info">
+								<h3 class="item__title">Вариант 1</h3>
+								<p class="item__text">
+									<span class="item__false">Ложь</span> оператор строго равенства не меняет тип данных
+									поэтому число 1 не равно строке "1"
+								</p>
+							</div>
+						</article>
+					</div>
+				</section>
+				<section class="second">
+					<div class="second__container">
+						<article class="second__item item">
+							<div class="item__image">
+								<img src="./img/02-2.png" alt="image">
+							</div>
+							<div class="item__info">
+								<h3 class="item__title">Вариант 2</h3>
+								<p class="item__text">
+									<span class="item__true">Истина</span> оператор не строгого равенства
+									переводит строку в число, поэтому 5 = 5
+								</p>
+							</div>
+						</article>
+					</div>
+				</section>
+				<section class="third">
+					<div class="third__container">
+						<article class="third__item item">
+							<div class="item__image">
+								<img src="./img/03-2.png" alt="image">
+							</div>
+							<div class="item__info">
+								<h3 class="item__title">Вариант 3</h3>
+								<p class="item__text">
+									<span class="item__true">Истина</span> оператор < переведет строку "11"
+									в число, 92 > 11, 58 < 100, оба выржения вернут true, поэтому получим "Истина!"  
+								</p>
+							</div>
+						</article>
+					</div>
+				</section>
+				<section class="fourth">
+					<div class="fourth__container">
+						<article class="fourth__item item">
+							<div class="item__image">
+								<img src="./img/04-2.png" alt="image">
+							</div>
+							<div class="item__info">
+								<h3 class="item__title">Вариант 4</h3>
+								<p class="item__text">
+									<span class="item__true">Истина</span> 0 вернет false, строка " " вернет
+									true тк она не пустая
+								</p>
+							</div>
+						</article>
+					</div>
+				</section>
+			</div>
+			<div class="page__third-lesson third-lesson">
+				<section class="first">
+					<div class="firts__container">
+						<article class="first__item item">
+							<div class="item__image">
+								<img src="./img/01-3.png" alt="image">
+							</div>
+							<div class="item__info">
+								<h3 class="item__title">Задача 2</h3>
+								<p class="item__text">
+									<span class="item__false">Не верно</span> последний выведеный результат
+									будет "1" тк после вывода единицы сработет декремент и цыкл остановится
+									еще до следующего вывода
+									(0 вернет false)
+								</p>
+							</div>
+						</article>
+					</div>
+				</section>
+			</div>
+			<div class="page__fifth-lesson fifth-lesson">
+				<section class="first">
+					<div class="first__container">
+						<article class="first__item item">
+							<div class="item__image">
+								<img src="./img/01-5.png" alt="image">
+							</div>
+							<div class="item__info">
+								<h3 class="item__title">Задача 1</h3>
+								<p class="item__text">
+									<span class="item__false">Не верно</span> что бы иметь возможность
+									вставлять переменные и тд в строку, сама строка должна быть записана 
+									в обратных кавычках   `...`
+								</p>
+							</div>
+						</article>
+					</div>
+				</section>
+				<section class="second">
+					<div class="second__container">
+						<article class="second__item item">
+							<div class="item__image">
+								<img src="./img/02-5.png" alt="image">
+							</div>
+							<div class="item__info">
+								<h3 class="item__title">Задача 3</h3>
+								<p class="item__text">
+									<span class="item__false">Не верно</span> оператор "+" не 
+									преобрзовывает тип данных, тк 456 - строка то в консоли мы получим 
+									СТРОКУ "123456"
+								</p>
+							</div>
+						</article>
+					</div>
+				</section>
+				<section class="third">
+					<div class="third__container">
+						<article class="third__item item">
+							<div class="item__image">
+								<img src="./img/03-5.png" alt="image">
+							</div>
+							<div class="item__info">
+								<h3 class="item__title">Задача 6</h3>
+								<p class="item__text">
+									<span class="item__false">False</span> отрезок "лан" строки "фрилансер" начинется
+									с 3 позиции, поэтому получим False 
+								</p>
+							</div>
+						</article>
+					</div>
+				</section>
+			</div>
+		</main>
+		<footer class="footer"></footer>
+	</div>
+
+	<script src="./js/app.js"></script>
+</body>
+</html>
