@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  min-width: 320px;
+}
+
+body {
+  color: #424551;
+  line-height: 1;
+  font-family: "Lato";
+  font-size: 16px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+input,
+button,
+textarea {
+  font-family: "Lato";
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+button {
+  cursor: pointer;
+  color: inherit;
+  background-color: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+body {
+  background-color: #353535;
+}
+
+[class*=__container] {
+  max-width: 800px;
+  padding: 0 15px;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+  position: relative;
+}
+.wrapper > main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.page {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.page > *:not(:last-child) {
+  margin-bottom: 60px;
+}
+.page__first-lesson > *:not(:last-child) {
+  margin-bottom: 40px;
+}
+.page__first-lesson .item {
+  background-color: #77608d;
+}
+.page__second-lesson > *:not(:last-child) {
+  margin-bottom: 40px;
+}
+.page__second-lesson .item {
+  background-color: rgb(151, 115, 39);
+}
+.page__third-lesson > *:not(:last-child) {
+  margin-bottom: 40px;
+}
+.page__third-lesson .item {
+  background-color: rgb(68, 151, 219);
+}
+
+.item {
+  border-radius: 10px;
+  padding: 20px;
+  color: #fff;
+}
+.item__image {
+  width: 100%;
+  height: 200px;
+}
+.item__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.item__info > *:not(:last-child) {
+  margin-bottom: 15px;
+}
+.item__title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.5;
+}
+.item__text {
+  line-height: 1.3;
+  font-size: 18px;
+}
+.item__text span {
+  font-size: 20px;
+  font-weight: 700;
+  margin-right: 10px;
+}
+.item__false {
+  color: red;
+}
+.item__true {
+  color: rgb(61, 180, 61);
+}

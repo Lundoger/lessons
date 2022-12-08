@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/style.css">
+	<title>lesson 24</title>
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header">
+		</header>
+		<main class="page">
+			<div class="page__first-lesson first-lesson">
+				<section class="first">
+					<div class="first__container">
+						<article class="first__item item">
+							<div class="item__image">
+								<img src="./img/01.png" alt="image">
+							</div>
+							<div class="item__info">
+								<h3 class="item__title item__title--first">Задача 1</h3>
+								<p class="item__text">
+									<span class="item__true">Коля!</span>первым в консоль выведется строка "Коля!"
+									тк showName задан setTimeout
+								</p>
+							</div>
+						</article>
+					</div>
+				</section>
+				<section class="second">
+					<div class="second__container">
+						<article class="second__item item">
+							<div class="item__image">
+								<img src="./img/02.png" alt="image">
+							</div>
+							<div class="item__info">
+								<h3 class="item__title">Задача 2</h3>
+								<p class="item__text">
+									<span class="item__true">Верно</span> тк функцию можно вызывать
+									и до ее объявления 
+								</p>
+							</div>
+						</article>
+					</div>
+				</section>
+				<section class="third">
+					<div class="third__container">
+						<article class="third__item item">
+							<div class="item__image">
+								<img src="./img/03.png" alt="image">
+							</div>
+							<div class="item__info">
+								<h3 class="item__title">Задача 3</h3>
+								<p class="item__text">
+									<span class="item__false">Не верно</span> тк это функциональное выражение то
+									вызывать его можно только после его создания (ниже по коду) 
+								</p>
+							</div>
+						</article>
+					</div>
+				</section>
+			</div> 
+			<div class="page__second-lesson second-lesson">
+				<section class="first">
+					<div class="firts__container">
+						<article class="first__item item">
+							<div class="item__image">
+								<img src="./img/01-2.png" alt="image">
+							</div>
+							<div class="item__info">
+								<h3 class="item__title">Задача 1</h3>
+								<p class="item__text">
+									<span class="item__true">4</span> тк из-за записи newArr = arr
+									у нас теперь два "ключа" по которым мы можем обращатся к arr
+									а не два разных масива и записью newArr.push(...) мы изменили
+									сам arr
+								</p>
+							</div>
+						</article>
+					</div>
+				</section>
+				<section class="second">
+					<div class="second__container">
+						<article class="second__item item">
+							<div class="item__image">
+								<img src="./img/02-2.png" alt="image">
+							</div>
+							<div class="item__info">
+								<h3 class="item__title">Задача 5</h3>
+								<p class="item__text">
+									<span class="item__true">9</span> тк начальное значение previousValue не указано
+									то previousValue будет равен первому элементу масива, в нашем случе - 9
+								</p>
+							</div>
+						</article>
+					</div>
+				</section>
+			</div>
+			<div class="page__third-lesson third-lesson">
+				<section class="first">
+					<div class="firts__container">
+						<article class="first__item item">
+							<div class="item__image item__image--third">
+								<img src="./img/03-1.png" alt="image">
+							</div>
+							<div class="item__info">
+								<h3 class="item__title">Задача 4</h3>
+								<p class="item__text">
+									элемент добавится внутрь ul после всех дочених тегов, те после "li пункт-2 li"
+								</p>
+							</div>
+						</article>
+					</div>
+				</section>
+			</div>
+			<!-- 
+			<div class="page__fifth-lesson fifth-lesson">
+				<section class="first">
+					<div class="first__container">
+						<article class="first__item item">
+							<div class="item__image">
+								<img src="./img/01-5.png" alt="image">
+							</div>
+							<div class="item__info">
+								<h3 class="item__title">Задача 1</h3>
+								<p class="item__text">
+									<span class="item__false">Не верно</span> что бы иметь возможность
+									вставлять переменные и тд в строку, сама строка должна быть записана 
+									в обратных кавычках   `...`
+								</p>
+							</div>
+						</article>
+					</div>
+				</section>
+				<section class="second">
+					<div class="second__container">
+						<article class="second__item item">
+							<div class="item__image">
+								<img src="./img/02-5.png" alt="image">
+							</div>
+							<div class="item__info">
+								<h3 class="item__title">Задача 3</h3>
+								<p class="item__text">
+									<span class="item__false">Не верно</span> оператор "+" не 
+									преобрзовывает тип данных, тк 456 - строка то в консоли мы получим 
+									СТРОКУ "123456"
+								</p>
+							</div>
+						</article>
+					</div>
+				</section>
+				<section class="third">
+					<div class="third__container">
+						<article class="third__item item">
+							<div class="item__image">
+								<img src="./img/03-5.png" alt="image">
+							</div>
+							<div class="item__info">
+								<h3 class="item__title">Задача 6</h3>
+								<p class="item__text">
+									<span class="item__false">False</span> отрезок "лан" строки "фрилансер" начинется
+									с 3 позиции, поэтому получим False 
+								</p>
+							</div>
+						</article>
+					</div>
+				</section>
+			</div>
+		 -->
+		<!-- хтмл для задач -->
+		<div data-say-hi="yes"></div>
+
+		<ul>
+			<li>Корчи</li>
+			<li>Йончи</li>
+		</ul>
+
+		<div class="like"></div>
+		<div class="subscribe"></div>
+		<div class="like subscribe"></div>
+
+		</main>
+		<footer class="footer"></footer>
+	</div>
+
+	<script src="./js/app.js"></script>
+</body>
+</html>
